@@ -128,3 +128,12 @@ button:active:before {
   opacity: 0.5;
   text-decoration: line-through;
 }
+
+@media (max-width: 600px){
+.form {
+  width: 90%;
+}
+.section {
+  width: 90%;
+} 
+}
