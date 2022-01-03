@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-family: "Noto Sans", sans-serif;
+  overflow: scroll;
+  color: black;
+  background-image: url("./img/brett-jordan--AWU0f2yH_k-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: rgba(255, 255, 255, 0.5);
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  height: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.section {
+  width: 50%;
+}
+.todo {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 7px;
+  margin-top: 10px;
+  backdrop-filter: blur(3px);
+}
+.icons i {
+  margin: 5px;
+  padding: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.icons i:nth-child(1) {
+  color: rgb(5, 167, 5);
+}
+.icons i:nth-child(2) {
+  color: #ff1700;
+}
+.form {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 50px;
+  backdrop-filter: blur(3px);
+}
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  width: inherit;
+  font-size: 20px;
+}
+.inputTrim {
+  -webkit-box-shadow: inset 0px 0px 7px 0px #ff1700;
+  box-shadow: inset 0px 0px 7px 0px #ff1700;
+}
+
+button {
+  width: 150px;
+  height: 28px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.3s;
+  z-index: 1;
+  margin: 10px;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+button:hover {
+  color: black;
+}
+
+button:active:before {
+  background: #b9b9b9;
+}
+.hidden {
+  display: none;
+}
+
+.li {
+  list-style: none;
+}
+.chekched {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
